@@ -79,9 +79,9 @@ namespace SoundCload_Downloader
             {
                 url = tb_address.Text;
                 int check = SoundCloud.checkUrl(url);
-                tmr_pgb.Enabled = true;
                 if (check < 0 || check > 2)
                     msgBox("Không thể tải nhạc từ link này");
+
                 else
                 {
                     bt_download.Hide();
