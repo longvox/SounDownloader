@@ -65,7 +65,7 @@ namespace SoundCload_Downloader
             List<TrackID> ret = new List<TrackID>();
 
             int currentindex = 0;
-            string str = GetSourceURL("http://api.soundcloud.com/resolve.json?url=" + url + "&client_id=" + clientID);
+            string str = GetSourceURL("http://api.soundcloud.com/resolve.json?url=" + url + "&client_id=" + clientID + "&limit=1000");
             while (str.IndexOf("\"track\",\"id\":", currentindex) > 0)
             {
                 TrackID t = SearchTrackID(str, currentindex);
@@ -80,7 +80,7 @@ namespace SoundCload_Downloader
             // https://soundcloud.com/khoidarealest
             string s = GetSourceURL("http://api.soundcloud.com/resolve.json?url=" + url + "&client_id=" + clientID);
             string id = GetStringGroup(s, "\"id\":", ",", 0);
-            string str = GetSourceURL("http://api.soundcloud.com/users/" + id + "/tracks.json?client_id=" + clientID);
+            string str = GetSourceURL("http://api.soundcloud.com/users/" + id + "/tracks.json?client_id=" + clientID + "&limit=1000");
             List<TrackID> ret = new List<TrackID>();
             int currentindex = 0;
             while (str.IndexOf("\"track\",\"id\":", currentindex) > 0)

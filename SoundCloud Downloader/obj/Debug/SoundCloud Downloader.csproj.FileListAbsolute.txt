@@ -1,0 +1,10 @@
+E:\LapTrinh\C#\SoundCloud_Downloader\SoundCloud Downloader\bin\Debug\SounDownloader.exe.config
+E:\LapTrinh\C#\SoundCloud_Downloader\SoundCloud Downloader\bin\Debug\SounDownloader.exe
+E:\LapTrinh\C#\SoundCloud_Downloader\SoundCloud Downloader\bin\Debug\SounDownloader.pdb
+E:\LapTrinh\C#\SoundCloud_Downloader\SoundCloud Downloader\obj\Debug\SoundCloud Downloader.csprojResolveAssemblyReference.cache
+E:\LapTrinh\C#\SoundCloud_Downloader\SoundCloud Downloader\obj\Debug\SoundCload_Downloader.frm_main.resources
+E:\LapTrinh\C#\SoundCloud_Downloader\SoundCloud Downloader\obj\Debug\SoundCload_Downloader.Message.resources
+E:\LapTrinh\C#\SoundCloud_Downloader\SoundCloud Downloader\obj\Debug\SounDownloader.Properties.Resources.resources
+E:\LapTrinh\C#\SoundCloud_Downloader\SoundCloud Downloader\obj\Debug\SoundCloud Downloader.csproj.GenerateResource.Cache
+E:\LapTrinh\C#\SoundCloud_Downloader\SoundCloud Downloader\obj\Debug\SounDownloader.exe
+E:\LapTrinh\C#\SoundCloud_Downloader\SoundCloud Downloader\obj\Debug\SounDownloader.pdb
