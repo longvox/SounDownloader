@@ -8,3 +8,13 @@ E:\BaiTap\C#\SoundCload Downloader\SoundCload Downloader\bin\Debug\SounDownloade
 E:\BaiTap\C#\SoundCload Downloader\SoundCload Downloader\obj\Debug\SounDownloader.exe
 E:\BaiTap\C#\SoundCload Downloader\SoundCload Downloader\obj\Debug\SounDownloader.pdb
 E:\BaiTap\C#\SoundCload Downloader\SoundCload Downloader\obj\Debug\SoundCload_Downloader.frm_main.resources
+E:\BaiTap\C#\SoundCloud_Downloader\SoundCload Downloader\bin\Debug\SounDownloader.exe.config
+E:\BaiTap\C#\SoundCloud_Downloader\SoundCload Downloader\obj\Debug\SounDownloader.exe
+E:\BaiTap\C#\SoundCloud_Downloader\SoundCload Downloader\obj\Debug\SounDownloader.pdb
+E:\BaiTap\C#\SoundCloud_Downloader\SoundCload Downloader\bin\Debug\SounDownloader.exe
+E:\BaiTap\C#\SoundCloud_Downloader\SoundCload Downloader\bin\Debug\SounDownloader.pdb
+E:\BaiTap\C#\SoundCloud_Downloader\SoundCload Downloader\obj\Debug\SoundCload Downloader.csprojResolveAssemblyReference.cache
+E:\BaiTap\C#\SoundCloud_Downloader\SoundCload Downloader\obj\Debug\SoundCload_Downloader.frm_main.resources
+E:\BaiTap\C#\SoundCloud_Downloader\SoundCload Downloader\obj\Debug\SoundCload_Downloader.Message.resources
+E:\BaiTap\C#\SoundCloud_Downloader\SoundCload Downloader\obj\Debug\SounDownloader.Properties.Resources.resources
+E:\BaiTap\C#\SoundCloud_Downloader\SoundCload Downloader\obj\Debug\SoundCload Downloader.csproj.GenerateResource.Cache

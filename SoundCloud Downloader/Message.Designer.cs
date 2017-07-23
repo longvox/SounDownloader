@@ -32,6 +32,7 @@
             System.Windows.Forms.Label titleApp;
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Message));
             this.header = new System.Windows.Forms.Panel();
+            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             this.iconApp = new System.Windows.Forms.PictureBox();
             this.bunifuElipse1 = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.ms_box = new System.Windows.Forms.RichTextBox();
@@ -39,12 +40,11 @@
             this.bunifuDragControl1 = new Bunifu.Framework.UI.BunifuDragControl(this.components);
             this.bt_ok = new Bunifu.Framework.UI.BunifuThinButton2();
             this.im_icon = new System.Windows.Forms.PictureBox();
-            this.bunifuImageButton1 = new Bunifu.Framework.UI.BunifuImageButton();
             titleApp = new System.Windows.Forms.Label();
             this.header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconApp)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.im_icon)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).BeginInit();
             this.SuspendLayout();
             // 
             // titleApp
@@ -70,6 +70,22 @@
             this.header.Name = "header";
             this.header.Size = new System.Drawing.Size(395, 35);
             this.header.TabIndex = 1;
+            // 
+            // bunifuImageButton1
+            // 
+            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
+            this.bunifuImageButton1.ErrorImage = global::SounDownloader.Properties.Resources.cancel;
+            this.bunifuImageButton1.Image = global::SounDownloader.Properties.Resources.cancel;
+            this.bunifuImageButton1.ImageActive = null;
+            this.bunifuImageButton1.InitialImage = global::SounDownloader.Properties.Resources.cancel;
+            this.bunifuImageButton1.Location = new System.Drawing.Point(365, 5);
+            this.bunifuImageButton1.Name = "bunifuImageButton1";
+            this.bunifuImageButton1.Size = new System.Drawing.Size(25, 25);
+            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bunifuImageButton1.TabIndex = 7;
+            this.bunifuImageButton1.TabStop = false;
+            this.bunifuImageButton1.Zoom = 10;
+            this.bunifuImageButton1.Click += new System.EventHandler(this.bt_close_Click);
             // 
             // iconApp
             // 
@@ -157,21 +173,6 @@
             this.im_icon.TabIndex = 2;
             this.im_icon.TabStop = false;
             // 
-            // bunifuImageButton1
-            // 
-            this.bunifuImageButton1.BackColor = System.Drawing.Color.Transparent;
-            this.bunifuImageButton1.ErrorImage = global::SounDownloader.Properties.Resources.cancel;
-            this.bunifuImageButton1.Image = global::SounDownloader.Properties.Resources.cancel;
-            this.bunifuImageButton1.ImageActive = null;
-            this.bunifuImageButton1.InitialImage = global::SounDownloader.Properties.Resources.cancel;
-            this.bunifuImageButton1.Location = new System.Drawing.Point(365, 5);
-            this.bunifuImageButton1.Name = "bunifuImageButton1";
-            this.bunifuImageButton1.Size = new System.Drawing.Size(25, 25);
-            this.bunifuImageButton1.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bunifuImageButton1.TabIndex = 7;
-            this.bunifuImageButton1.TabStop = false;
-            this.bunifuImageButton1.Zoom = 10;
-            // 
             // Message
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -189,9 +190,9 @@
             this.Text = "MessageBox";
             this.header.ResumeLayout(false);
             this.header.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconApp)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.im_icon)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bunifuImageButton1)).EndInit();
             this.ResumeLayout(false);
 
         }
