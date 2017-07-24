@@ -33,6 +33,7 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frm_main));
             this.buni_elipse = new Bunifu.Framework.UI.BunifuElipse(this.components);
             this.header = new System.Windows.Forms.Panel();
+            this.bt_close = new Bunifu.Framework.UI.BunifuImageButton();
             this.iconApp = new System.Windows.Forms.PictureBox();
             this.panel2 = new System.Windows.Forms.Panel();
             this.dragControl_header = new Bunifu.Framework.UI.BunifuDragControl(this.components);
@@ -54,16 +55,15 @@
             this.bt_dlgFolder = new Bunifu.Framework.UI.BunifuImageButton();
             this.pgb_download = new Bunifu.Framework.UI.BunifuCircleProgressbar();
             this.lb_about = new Bunifu.Framework.UI.BunifuCustomLabel();
-            this.bt_close = new Bunifu.Framework.UI.BunifuImageButton();
             titleApp = new System.Windows.Forms.Label();
             this.header.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bt_close)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconApp)).BeginInit();
             this.pnl_label.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.bt_mail)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_openBlog)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_download)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_dlgFolder)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bt_close)).BeginInit();
             this.SuspendLayout();
             // 
             // titleApp
@@ -94,6 +94,22 @@
             this.header.Name = "header";
             this.header.Size = new System.Drawing.Size(464, 35);
             this.header.TabIndex = 0;
+            // 
+            // bt_close
+            // 
+            this.bt_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
+            this.bt_close.BackColor = System.Drawing.Color.Transparent;
+            this.bt_close.ErrorImage = global::SounDownloader.Properties.Resources.cancel;
+            this.bt_close.Image = global::SounDownloader.Properties.Resources.cancel;
+            this.bt_close.ImageActive = null;
+            this.bt_close.Location = new System.Drawing.Point(435, 5);
+            this.bt_close.Name = "bt_close";
+            this.bt_close.Size = new System.Drawing.Size(25, 25);
+            this.bt_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
+            this.bt_close.TabIndex = 3;
+            this.bt_close.TabStop = false;
+            this.bt_close.Zoom = 10;
+            this.bt_close.Click += new System.EventHandler(this.bt_close_Click);
             // 
             // iconApp
             // 
@@ -334,22 +350,6 @@
             this.lb_about.Text = "by Long Vox";
             this.lb_about.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
-            // bt_close
-            // 
-            this.bt_close.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Right)));
-            this.bt_close.BackColor = System.Drawing.Color.Transparent;
-            this.bt_close.ErrorImage = global::SounDownloader.Properties.Resources.cancel;
-            this.bt_close.Image = global::SounDownloader.Properties.Resources.cancel;
-            this.bt_close.ImageActive = null;
-            this.bt_close.Location = new System.Drawing.Point(435, 5);
-            this.bt_close.Name = "bt_close";
-            this.bt_close.Size = new System.Drawing.Size(25, 25);
-            this.bt_close.SizeMode = System.Windows.Forms.PictureBoxSizeMode.Zoom;
-            this.bt_close.TabIndex = 3;
-            this.bt_close.TabStop = false;
-            this.bt_close.Zoom = 10;
-            this.bt_close.Click += new System.EventHandler(this.bt_close_Click);
-            // 
             // frm_main
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
@@ -374,6 +374,7 @@
             this.Text = "SounDownloader";
             this.header.ResumeLayout(false);
             this.header.PerformLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.bt_close)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.iconApp)).EndInit();
             this.pnl_label.ResumeLayout(false);
             this.pnl_label.PerformLayout();
@@ -381,7 +382,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.bt_openBlog)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_download)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.bt_dlgFolder)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.bt_close)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 

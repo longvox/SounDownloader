@@ -20,7 +20,8 @@ namespace SoundCload_Downloader
         int count = 0;
         List<TrackID> t = new List<TrackID>();
         string url;
-
+        string fileName;
+        string path;
         public frm_main()
         {
             InitializeComponent();
@@ -38,7 +39,11 @@ namespace SoundCload_Downloader
                     pgb_download.Value = 10;
                     pgb_download.animated = true;
                     pgb_download.LabelVisible = false;
+
                     tmr_pgb_show.Enabled = true;
+
+                    tb_save.Enabled = true;
+                    tb_address.Enabled = true;
 
                     msgBox("Đã tải xong!", 0);
 
@@ -84,9 +89,15 @@ namespace SoundCload_Downloader
 
                 else
                 {
+                    path = tb_save.Text;
+                    tb_save.Enabled = false;
+                    tb_address.Enabled = false;
+
                     bt_download.Hide();
                     tmr_pgb.Enabled = true;
+
                     t = new List<TrackID>();
+
                     Thread thr = new Thread(() =>
                     {
                         Invoke(new MethodInvoker(delegate()
@@ -120,7 +131,6 @@ namespace SoundCload_Downloader
 
         private void DownLoadFile()
         {
-            string fileName;
             WebClient client = new WebClient();
 
             int i = t.Count - count;
@@ -130,7 +140,7 @@ namespace SoundCload_Downloader
             client.DownloadFileCompleted += new AsyncCompletedEventHandler(client_DownloadFileCompleted);
             client.DownloadProgressChanged += new DownloadProgressChangedEventHandler(client_DownloadProgressChanged);
 
-            fileName = dlg_FolderBrowser.SelectedPath;
+            fileName = path;
             if (fileName[fileName.Length - 1] != '\\')
                 fileName += @"\";
 

@@ -120,7 +120,6 @@ namespace SoundCload_Downloader
                 if (str == "" || str == "error")
                     return 3;
                 string s = GetStringGroup(str, "\"kind\":\"", "\",", 0);
-                Console.WriteLine(s);
                 if (s == "track")
                     return 1;
                 else if (s == "user")
